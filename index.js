@@ -25,7 +25,10 @@ dbConnect();
 
 // default route 
 app.get('/', (req, res) => {
-        res.send("hello ji ki hall");
+        res.json({
+                success: true,
+                message: "hello ji ki hall"
+        });
 })
 app.get('/car', (req, res) => {
         res.send("My car name is scorpio");
