@@ -12,5 +12,14 @@ router.get("/getTodo", getTodo)
 router.get("/getTodo/:id", getTodoById)
 router.put("/updateTodo/:id", updateTodo)
 router.delete("/deleteTodo/:id", deleteTodo)
+router.get('/', (req, res) => {
+        res.json({
+                success: true,
+                message: "hello ji ki hall"
+        });
+})
+router.get('/car', (req, res) => {
+        res.send("My car name is scorpio");
+})
 
 module.exports = router;
